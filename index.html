@@ -1,0 +1,683 @@
+var A; 
+
+     
+
+var point;
+
+var seconds;
+
+var minutes;
+
+var hours;
+
+function genrebut(iid){
+
+document.getElementById("musictype").innerText=iid;
+
+closemenu();
+
+onPlayerReady();
+
+}
+
+function inter(){
+
+var date = new Date;
+
+var second = date.getSeconds();
+
+var minute = date.getMinutes();
+
+var hour = date.getHours();
+
+seconds=second;
+
+minutes=minute;
+
+hours=hour;
+
+if(minutes==0 && seconds==0) {
+
+onPlayerReady(); 
+
+   
+
+}
+
+}
+
+function myinterval(){
+
+    setInterval(inter,1);
+
+    
+
+}
+
+function list(h,id){
+
+if(document.getElementById("musictype").innerText=="Afrobeat"){
+
+if(hours==h){
+
+A=id;
+
+point=minutes*60+seconds;
+
+}
+
+} 
+
+ 
+
+}
+
+function aflist(){
+
+      list(1,"uKOllFHZb3s");
+
+      
+
+      list(2,"O55GfrssFVc");
+
+      
+
+      list(3,"BVVkyzH8TJo");
+
+      
+
+      list(4,"NIgZZlZ78N4");
+
+      
+
+      list(5,"r4ghXWROpM0");
+
+      
+
+      list(6,"8kcDDWkHQpk");
+
+      
+
+      list(7,"uKOllFHZb3s");
+
+      
+
+      list(8,"O55GfrssFVc");
+
+      
+
+      list(9,"BVVkyzH8TJo");
+
+      
+
+      list(10,"NIgZZlZ78N4");
+
+      
+
+      list(11,"r4ghXWROpM0");
+
+      
+
+      list(12,"8kcDDWkHQpk");
+
+      
+
+      list(13,"uKOllFHZb3s");
+
+      
+
+      list(14,"O55GfrssFVc");
+
+      
+
+      list(15,"BVVkyzH8TJo");
+
+      
+
+      list(16,"NIgZZlZ78N4");
+
+      
+
+      list(17,"r4ghXWROpM0");
+
+      
+
+      list(18,"8kcDDWkHQpk");
+
+      
+
+      list(19,"uKOllFHZb3s");
+
+      
+
+      list(20,"O55GfrssFVc");
+
+      
+
+      list(21,"BVVkyzH8TJo");
+
+      
+
+      list(22,"NIgZZlZ78N4");
+
+      
+
+      list(23,"r4ghXWROpM0");
+
+      
+
+      list(0,"8kcDDWkHQpk");
+
+      
+
+}
+
+function gospellist(h,id){
+
+if(document.getElementById("musictype").innerText=="Gospel Music"){
+
+if(hours==h){
+
+A=id;
+
+point=minutes*60+seconds;
+
+}
+
+}
+
+}
+
+function gospelist(){
+
+    gospellist(0,"nAfU-y08dKs");
+
+    
+
+    gospellist(1,"J63C7IqhqVw");
+
+    
+
+    gospellist(2,"9aaUWDdichw");
+
+    
+
+    gospellist(3,"aLv1_fhKG_8");
+
+    
+
+    gospellist(4,"JtTFp0LB-1A");
+
+    
+
+    gospellist(5,"HPKwdzZg7ho");
+
+    
+
+    gospellist(6,"2--PTfwpND0");
+
+    
+
+    gospellist(7,"5GedohUsgBA");
+
+    
+
+    gospellist(8,"d0_isE7C2Y0");
+
+    
+
+    gospellist(9,"r0VUg0X-bGg");
+
+    
+
+    gospellist(10,"qCZAynQU_-8");
+
+    
+
+    gospellist(11,"v8pWf-DDhNM");
+
+    
+
+    gospellist(12,"nAfU-y08dKs");
+
+    
+
+    gospellist(13,"J63C7IqhqVw");
+
+    
+
+    gospellist(14,"9aaUWDdichw");
+
+    
+
+    gospellist(15,"aLv1_fhKG_8");
+
+    
+
+    gospellist(16,"JtTFp0LB-1A");
+
+    
+
+    gospellist(17,"HPKwdzZg7ho");
+
+    
+
+    gospellist(18,"2--PTfwpND0");
+
+    
+
+    gospellist(19,"5GedohUsgBA");
+
+    
+
+    gospellist(20,"d0_isE7C2Y0");
+
+    
+
+    gospellist(21,"r0VUg0X-bGg");
+
+    
+
+    gospellist(22,"qCZAynQU_-8");
+
+    
+
+    gospellist(23,"v8pWf-DDhNM");
+
+        
+
+}
+
+function ginstrumentalList(){
+
+if(hours<=11){
+
+if(document.getElementById("musictype").innerText=="Gospel Music Instrumental"){
+
+A="_1xNxxsbWRg";
+
+point=(hours*3600)+(minutes*60)+(seconds);
+
+}
+
+}
+
+if(hours>=12){
+
+if(document.getElementById("musictype").innerText=="Gospel Music Instrumental"){
+
+A="_1xNxxsbWRg";
+
+point=(hours-12)*3600+(minutes*60)+(seconds);
+
+}
+
+}
+
+}
+
+function emusic(h,hh,iddd){
+
+if(document.getElementById("musictype").innerText=="Epic Music"){
+
+if(hours==h){
+
+A=iddd;
+
+point=(0*3600)+(minutes*60)+(seconds);
+
+}
+
+if(hours==hh){
+
+A=iddd;
+
+point=(1*3600)+(minutes*60)+(seconds);
+
+}
+
+}  
+
+  
+
+}
+
+      
+
+function epmusic() {
+
+emusic(0,1,"qfl9VX5fAdY");  
+
+  
+
+emusic(2,3,"3TAUnYZpMbA"); 
+
+   
+
+emusic(4,5,"Ym8JjY4fy-M");  
+
+  
+
+emusic(6,7,"guXMb7zLblM"); 
+
+   
+
+emusic(8,9,"-rzaSPs__-A"); 
+
+   
+
+emusic(10,11,"gFeZh36136E");    
+
+emusic(12,13,"qfl9VX5fAdY");  
+
+  
+
+emusic(14,15,"3TAUnYZpMbA"); 
+
+   
+
+emusic(16,17,"Ym8JjY4fy-M");  
+
+  
+
+emusic(18,19,"guXMb7zLblM");  
+
+  
+
+emusic(20,21,"-rzaSPs__-A");  
+
+  
+
+emusic(22,23,"gFeZh36136E"); 
+
+}
+
+function rmusic(h,hh,iddd){
+
+    
+
+if(document.getElementById("musictype").innerText=="Rap/Hip-Hop"){
+
+if(hours==h){
+
+A=iddd;
+
+point=(0*3600)+(minutes*60)+(seconds);
+
+}
+
+if(hours==hh){
+
+A=iddd;
+
+point=(1*3600)+(minutes*60)+(seconds);
+
+}
+
+}  
+
+  
+
+    
+
+} 
+
+function rapmusic(){
+
+    
+
+rmusic(0,1,"LMuwm5tYfbQ");  
+
+  
+
+rmusic(2,3,"QGtgx-vg-Bw"); 
+
+   
+
+rmusic(4,5,"AhXLWinfdhY");  
+
+  
+
+rmusic(6,7,"xHbpoFvWT-I"); 
+
+   
+
+rmusic(8,9,"oT7apMpJhf8"); 
+
+   
+
+rmusic(10,11,"Z_HAq7Dl1Ek");    
+
+rmusic(12,13,"LMuwm5tYfbQ");  
+
+  
+
+rmusic(14,15,"QGtgx-vg-Bw"); 
+
+   
+
+rmusic(16,17,"AhXLWinfdhY");  
+
+  
+
+rmusic(18,19,"xHbpoFvWT-I");  
+
+  
+
+rmusic(20,21,"oT7apMpJhf8");  
+
+  
+
+rmusic(22,23,"Z_HAq7Dl1Ek");    
+
+}
+
+function openmenu(){
+
+document.getElementById("top").style.display="none";
+
+document.getElementById("middle").style.display="none";
+
+   
+
+document.getElementById("genres").style.display="block";
+
+document.getElementById("genrelist").style.display="block";
+
+}
+
+function closemenu(){
+
+document.getElementById("top").style.display="block";
+
+document.getElementById("middle").style.display="block";
+
+   
+
+document.getElementById("genres").style.display="none";
+
+document.getElementById("genrelist").style.display="none";
+
+}
+
+function glist(){
+
+genrebut("Gospel Music");  
+
+ 
+
+}
+
+function gilist(){
+
+    genrebut("Gospel Music Instrumental");
+
+    
+
+}
+
+function elist(){
+
+    genrebut("Epic Music");
+
+    
+
+}
+
+function alist(){
+
+genrebut("Afrobeat");   
+
+ 
+
+}
+
+function rlist(){
+
+    
+
+genrebut("Rap/Hip-Hop");
+
+    
+
+}
+
+    
+
+                               
+
+        
+
+      var b;
+
+      
+
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+
+      
+
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+
+      
+
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      
+
+      // 3. This function creates an <iframe> (and YouTube player)
+
+      //    after the API code downloads.
+
+      var player;
+
+      
+
+      function onYouTubeIframeAPIReady() {
+
+      
+
+        player = new YT.Player('player', {
+
+        
+
+          height: '1',
+
+          
+
+          width: '1',
+
+          
+
+                  
+
+                      
+
+          events: {
+
+          
+
+            'onReady': onPlayerReady,
+
+            'onStateChange': onMute
+
+            
+
+          }
+
+           
+
+        });
+
+        
+
+      }
+
+      // 4. The API will call this function when the video player is ready.
+
+      function onMute() {
+
+      
+
+             if(player.getPlayerState() == 0){
+
+            
+
+            player.playVideo();
+
+                    
+
+                
+
+                }
+
+                
+
+                }
+
+      
+
+      function onPlayerReady() {
+
+      
+
+      gospelist();
+
+      
+
+      ginstrumentalList();
+
+      
+
+      epmusic();
+
+      
+
+      aflist();
+
+      
+
+      rapmusic();
+
+      
+
+      player.loadVideoById({videoId:A,
+
+               'startSeconds':point,
+
+        //       'endSeconds': 3600,
+
+              
+
+               'suggestedQuality': 'large'});
+
+             player.playVideo(); 
+
+             
+
+      }
+
+      
+
+   
